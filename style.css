@@ -1,0 +1,18 @@
+:root { --blue: #2F6BFF; --deep: #183EC4; --ink: #10131a; --muted: #5b6475; --bg: #ffffff; --card: #f4f6fb; }
+@media (prefers-color-scheme: dark) { :root { --ink: #eef1f7; --muted: #a6aec0; --bg: #0d1017; --card: #171b25; } }
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 -apple-system, "Avenir Next", "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+header { background: linear-gradient(var(--blue), var(--deep)); color: #fff; padding: 40px 16px; text-align: center; }
+header img { width: 96px; height: 96px; border-radius: 50%; box-shadow: 0 6px 24px rgba(0,0,0,.25); }
+header h1 { margin: 14px 0 4px; font-size: 28px; letter-spacing: .5px; }
+header p { margin: 0; opacity: .9; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+h2 { font-size: 20px; margin-top: 28px; }
+a { color: var(--blue); }
+nav { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+nav a { color: #fff; font-weight: 600; text-decoration: none; opacity: .92; }
+.card { background: var(--card); border-radius: 14px; padding: 18px 20px; }
+.muted { color: var(--muted); font-size: 15px; }
+code { word-break: break-all; }
+button { background: var(--blue); color: #fff; border: 0; border-radius: 999px; padding: 10px 22px; font-size: 16px; font-weight: 600; cursor: pointer; }
+footer { text-align: center; color: var(--muted); font-size: 14px; padding: 0 16px 32px; }
